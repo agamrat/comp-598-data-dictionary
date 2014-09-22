@@ -20,13 +20,30 @@ Congressional Session (99): The number of the United States Congress session. Ca
 
 Sponsor District (3): Integer representing the district from where the bill sponsor was elected. 
 
-Committee (43): TODO
+Committee (43): Integer representing the first committee the bill was sent to. 
+        - SPAG: 1       SSAF: 2         SSAP: 3         SSAS: 4         SSBK: 5 
+          SSBU: 6       SSCM: 7         SSEG: 8         SSEV: 9         SLET: 11 
+          SSFI: 12      SSFR: 13        SSFR: 14        SSGA: 15        SLIA: 16 
+          SLIN: 17      SSJU: 18        SSRA: 19        SSSB: 20        SCNC: 21 
+          SSVA: 22      HSAG: 23        HSAP: 24        HSAS: 25        HSBU: 26 
+          HSED: 27      HSIF: 28        HSSO: 29        HLZI: 30        HSBA: 31 
+          HSFA: 32      HSHM: 33        HSHA: 34        HLIG: 35        HSJU: 36
+          HSII: 37      HSGO: 38        HSRU: 39        HSSY: 40        HSSM: 41 
+          HSPW: 42      HSVR: 43        HSWM: 44	
+	- For a detailed list of committee names, please visit: https://www.govtrack.us/congress/committees/
 
-Sponsor Party (0): TODO
+Sponsor Party (0): Integer representing which party the sponsor belongs to.
+	- Democrat: 0
+	- Republican: 1
+	- Independent: 2
+	- New Progressive: 3
+	- Liberal: 4
+	- Conservative: 5
+	- Farmer Labor: 6
 
 Sponsor Gender (1): Sex of the bill's sponsor with 1 representing female and 0 male.
 
-Sponsor Role (0): TODO
+Sponsor Role (0): Integer representing whether the sponsor is a senator (1) or representative (1).
 
 Cosponsors (8): Number of cosponsors signed on to the bill.
 
