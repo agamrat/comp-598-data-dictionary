@@ -3,18 +3,18 @@ comp-598-data-dictionary
 
 This dataset contains information about bills proposed in both the US House of Representatives and the Senate. It was assembled from GovTrack.us and may be freely used for any non-commercial application.
 
-Size of the dataset:
+##Size of the dataset:
 220,484 bills from the 93rd Congressional session (1970s) to the present.
 25,000 of these bills passed into law.
 
-File Format:
+##File Format:
 CSV of integer values.
 First line is a header with feature names.
 
-Sample Line from the Dataset:
+##Sample Line from the Dataset:
 99,3,43,0,1,0,8,0,47,53,0,253,182,0,0
 
-Features in the order they appear:
+##Features in the order they appear:
 
 Congressional Session (99): The number of the United States Congress session. Can be correlated with a two-year period bracketed by elections.
 
