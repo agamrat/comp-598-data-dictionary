@@ -1,7 +1,9 @@
 comp-598-data-dictionary
 ========================
 
-This dataset contains information about bills proposed in both the US House of Representatives and the Senate. It was assembled from GovTrack.us and may be freely used for any non-commercial application.
+This dataset contains information about bills proposed in both the US House of Representatives and the Senate. It was assembled from GovTrack.us and may be freely used for any non-commercial application. 
+
+There are two datasets you can use. The first one, data.csv, does not contain any information regarding the subjects of the bills. However, we also provide a dataset, data_with_subjects.csv, that is identical to data.csv except for after all the features listed below, there is a comma-separated list containing all the subjects listed under that bill.
 
 ##Size of the dataset:
 220,484 bills from the 93rd Congressional session (1970s) to the present.
