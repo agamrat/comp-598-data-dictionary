@@ -1,0 +1,36 @@
+#!/bin/bash
+
+cp data_with_subjects.csv data_clean.csv
+
+sed '1d' -i data_clean.csv
+cut -d ',' --complement -f 4 data_clean.csv > temp.csv
+rm data_clean.csv
+mv temp.csv data_clean.csv
+
+cut -d ',' --complement -f 1,2,3,4,5,6,7,8,9 data_clean.csv > subjects.csv
+cut -d ',' -f 1,2,3,4,5,6,7,8,9 data_clean.csv > temp.csv
+rm data_clean.csv
+mv temp.csv data_clean.csv
+
+sed -i 's/,None,/,0,/' data_clean.csv
+sed -i 's/,,/,0,/' data_clean.csv
+
+sed -i 's/,Democrat,/,0,/' data_clean.csv
+sed -i 's/,Republican,/,1,/' data_clean.csv
+sed -i 's/,Independent,/,2,/' data_clean.csv
+sed -i 's/,New[ ]Progressive,/,3,/' data_clean.csv
+sed -i 's/,0-Liberal,/,4,/' data_clean.csv
+sed -i 's/,1-Conservative,/,5,/' data_clean.csv
+sed -i 's/,Conservative,/,5,/' data_clean.csv
+sed -i 's/,0\sFarmer[ ]Labor,/,6,/' data_clean.csv
+sed -i 's/,Popular,/,7,/' data_clean.csv
+sed -i 's/,Republican-Conservative,/,1,/' data_clean.csv
+sed -i 's/,Democrat-Liberal,/,0,/' data_clean.csv
+sed -i 's/,Popular[ ]Democrat,/,0,/' data_clean.csv
+
+sed -i 's/,M,/,0,/' data_clean.csv
+sed -i 's/,F,/,1,/' data_clean.csv
+
+
+sed -i 's/,rep,/,0,/' data_clean.csv
+sed -i 's/,sen,/,1,/' data_clean.csv

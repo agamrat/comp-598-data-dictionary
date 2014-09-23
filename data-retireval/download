@@ -1,0 +1,8 @@
+#!/bin/bash
+for i in {1..113}
+do
+	#mkdir "$i"
+	cd "$i"
+	rsync -avz --delete --delete-excluded --exclude "**/text-versions/" "govtrack.us::govtrackdata/congress/$i/bills" .
+	cd "../"
+done
